@@ -5,7 +5,6 @@ const Users=()=> {
             fetch('https://jsonplaceholder.typicode.com/users')
                 .then(response => response.json())
                 .then(json => setUsers(json))
-
     return (
         <div>{
          users.map(user=>(<User key={user.id} user={user}/>))
